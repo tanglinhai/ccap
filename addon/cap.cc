@@ -86,8 +86,8 @@ int cap::save(){
     *letter = captcha_text[k];
     if (*letter) {
       cimg_forX(color,i) color[i] = (unsigned char)(128+(std::rand()%127));
-      tmp.draw_text((int)(2+8*cimg::rand()),
-                    (int)(12*cimg::rand()),
+      // tmp.draw_text((int)(2+8*cimg::rand()), (int)(12*cimg::rand()),
+      tmp.draw_text((int)(1+2*cimg::rand()), (int)(2*cimg::rand()),
                     letter,
                     red,
                     0,
